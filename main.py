@@ -10,18 +10,15 @@ import random
 import json
 import asyncio
 
-# Настройка логирования
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
 logger = logging.getLogger(__name__)
 
-# Конфигурация
-BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
-DATABASE_NAME = "english_learning.db"
+BOT_TOKEN = "MY_BOT"
+DATABASE_NAME = "english_learning"
 
-# Категории слов по умолчанию
 DEFAULT_CATEGORIES = [
     "basic", "food", "animals", "family", "colors", 
     "numbers", "verbs", "adjectives", "professions", "travel"
